@@ -1,0 +1,9 @@
+*.log
+
+/node_modules
+/build
+/built
+
+/.vscode
+/.idea
+/.c9
