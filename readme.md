@@ -1,7 +1,5 @@
 # Maquette Typescript + JSX Starter
 
-This code sample is accompanying the blogpost about [maquette and JSX](https://medium.com/maquette-news/maquette-2-2-now-supports-jsx-7da7b0a1dc98).
-
 ## Instructions
 
 You need to run the following commands to run the application:
