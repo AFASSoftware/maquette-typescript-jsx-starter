@@ -6,7 +6,8 @@
         "outDir": "built",
         "rootDir": ".",
         "sourceMap": true,
-        "jsx": "preserve"
+        "jsx": "react",
+        "jsxFactory": "jsx"
     },
     "exclude": [
         "node_modules"

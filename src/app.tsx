@@ -1,7 +1,6 @@
 import {createTextInput} from './components/text-input'
 
 import * as maquette from 'maquette';
-const h = maquette.h;
 
 let name = ''; // Piece of data
 
