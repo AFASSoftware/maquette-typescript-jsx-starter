@@ -1,6 +1,6 @@
 import {createProjector} from 'maquette';
 import {renderMaquette} from './app';
-import { enableJsx } from 'maquette-jsx';
+import { enableGlobalJsx } from 'maquette-jsx';
 
-enableJsx();
+enableGlobalJsx();
 createProjector({}).append(document.body, renderMaquette);

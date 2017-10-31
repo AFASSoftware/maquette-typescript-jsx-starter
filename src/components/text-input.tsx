@@ -1,6 +1,5 @@
-import {Component} from 'maquette';
-import * as maquette from 'maquette';
-const h = maquette.h;
+import { Component } from 'maquette';
+import { jsx } from 'maquette-jsx';
 
 export interface TextInputConfig {
   placeholder: string;

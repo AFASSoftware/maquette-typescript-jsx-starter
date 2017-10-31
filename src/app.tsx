@@ -1,6 +1,5 @@
-import {createTextInput} from './components/text-input'
-
-import * as maquette from 'maquette';
+import {createTextInput} from './components/text-input';
+import { jsx } from 'maquette-jsx';
 
 let name = ''; // Piece of data
 
