@@ -1,18 +1,27 @@
 module.exports = {
-  resolve: {
-    extensions: ['', '.ts', '.tsx', '.webpack.js', '.web.js', '.js']
-  },
   entry: './src/main.ts',
   output: {
-    path: __dirname + '/build',
+    path: __dirname + '/build/webpack',
     filename: 'bundle.js'
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js']
+  },
   module: {
-    loaders: [
-      { 
+    rules: [
+      {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
+        loader: 'ts-loader',
+        exclude: /node_modules/,
+        options: {
+          transpileOnly: true
+        }
       }
+    ]
+  },
+  devServer: {
+    contentBase: [
+      'public'
     ]
   }
 };

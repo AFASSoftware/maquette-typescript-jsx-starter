@@ -1,5 +1,4 @@
-import { Component } from 'maquette';
-import { jsx } from 'maquette-jsx';
+import { MaquetteComponent } from 'maquette';
 
 export interface TextInputConfig {
   placeholder: string;
@@ -7,14 +6,14 @@ export interface TextInputConfig {
   setValue: (value: string) => void;
 }
 
-export let createTextInput = (config: TextInputConfig) : Component => {
+export let createTextInput = (config: TextInputConfig) : MaquetteComponent => {
   
   function handleInput(evt: Event) {
     config.setValue((evt.target as HTMLInputElement).value)
   }
   
   return {
-    renderMaquette: () => {
+    render: () => {
       return <input 
         type="text" 
         placeholder={config.placeholder}
@@ -22,4 +21,4 @@ export let createTextInput = (config: TextInputConfig) : Component => {
         oninput={handleInput} />;
     }
   }
-}
+};
