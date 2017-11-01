@@ -15,7 +15,6 @@ let nameInput = createTextInput({
 export function render() {
   return <div>
     { nameInput.render() }
-    { null }
     <p class="output">
       Hello {name || 'you'}!
     </p>
