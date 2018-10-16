@@ -1,5 +1,3 @@
-// test
-
 import { MaquetteComponent } from 'maquette';
 import { jsx } from 'maquette-jsx';
 

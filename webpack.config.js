@@ -23,5 +23,6 @@ module.exports = {
     contentBase: [
       'public'
     ]
-  }
+  },
+  mode: 'development'
 };
