@@ -4,16 +4,16 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "maquette": "3.3.3"
+    "maquette": "3.3.4"
   },
   "devDependencies": {
     "maquette-jsx": "3.0.0",
-    "ts-loader": "5.3.3",
-    "typescript-assistant": "0.37.4",
-    "webpack": "4.29.5",
-    "webpack-cli": "3.2.3",
-    "webpack-dev-middleware": "3.6.0",
-    "webpack-dev-server": "3.2.1"
+    "ts-loader": "6.0.2",
+    "typescript-assistant": "0.39.6",
+    "webpack": "4.33.0",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-middleware": "3.7.0",
+    "webpack-dev-server": "3.6.0"
   },
   "scripts": {
     "serve": "webpack-dev-server"
