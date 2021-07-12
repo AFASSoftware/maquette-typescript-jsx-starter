@@ -1,15 +1,21 @@
 {
   "compilerOptions": {
+    "lib": [
+      "dom",
+      "es2015",
+      "es6"
+    ],
     "module": "commonjs",
+    "moduleResolution": "node",
     "target": "es5",
     "strict": true,
     "outDir": "build/js",
     "rootDir": ".",
     "sourceMap": true,
     "jsx": "react",
-    "jsxFactory": "jsx"
+    "jsxFactory": "jsx",
+    "noEmit": true
   },
-  "exclude": [
-    "node_modules"
+  "include": [
   ]
 }

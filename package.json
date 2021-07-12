@@ -2,21 +2,28 @@
   "name": "maquette-typescript-jsx-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "",
   "dependencies": {
-    "maquette": "3.3.7"
+    "maquette": "3.5.0"
   },
   "devDependencies": {
     "maquette-jsx": "3.0.1",
-    "ts-loader": "8.0.0",
-    "typescript-assistant": "0.40.21",
-    "webpack": "4.43.0",
-    "webpack-cli": "3.3.12",
-    "webpack-dev-middleware": "3.7.2",
-    "webpack-dev-server": "3.11.0"
+    "ts-loader": "9.2.3",
+    "typescript-assistant": "0.50.1",
+    "webpack": "5.44.0",
+    "webpack-cli": "4.7.2",
+    "webpack-dev-middleware": "5.0.0",
+    "webpack-dev-server": "3.11.2"
   },
   "scripts": {
-    "serve": "webpack-dev-server"
+    "serve": "npx webpack serve",
+    "fixall": "tsa fixall"
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "module",
+      "parser": "typescript"
+    }
   },
   "license": "MIT"
 }
