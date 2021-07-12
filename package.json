@@ -7,7 +7,16 @@
     "maquette": "3.5.0"
   },
   "devDependencies": {
+    "@types/chai-as-promised": "7.1.4",
+    "@types/node": "16.3.0",
+    "@types/sinon": "10.0.2",
+    "@types/sinon-chai": "3.2.5",
+    "@types/sinonjs__fake-timers": "6.0.3",
+    "chai-as-promised": "7.1.1",
     "maquette-jsx": "3.0.1",
+    "maquette-query": "0.11.7",
+    "sinon": "11.1.1",
+    "sinon-chai": "3.7.0",
     "ts-loader": "9.2.3",
     "typescript-assistant": "0.50.1",
     "webpack": "5.44.0",
@@ -15,8 +24,51 @@
     "webpack-dev-middleware": "5.0.0",
     "webpack-dev-server": "3.11.2"
   },
+  "nyc": {
+    "include": [
+      "src/**/*.tsx?"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "json",
+      "html",
+      "text-summary"
+    ],
+    "cache": true,
+    "temp-directory": "./build/nyc/cache",
+    "all": true,
+    "check-coverage": false,
+    "report-dir": "./build/coverage",
+    "es-module": false,
+    "lines": 10,
+    "statements": 10,
+    "functions": 10,
+    "branches": 10,
+    "watermarks": {
+      "lines": [
+        75,
+        100
+      ],
+      "functions": [
+        75,
+        100
+      ],
+      "branches": [
+        75,
+        100
+      ],
+      "statements": [
+        75,
+        100
+      ]
+    }
+  },
   "scripts": {
     "serve": "npx webpack serve",
+    "assist": "tsa",
+    "clean": "tsa clean",
     "fixall": "tsa fixall"
   },
   "importSort": {

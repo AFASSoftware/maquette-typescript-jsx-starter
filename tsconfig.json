@@ -17,5 +17,6 @@
     "noEmit": true
   },
   "include": [
+    "test/**/*-tests.ts"
   ]
 }
