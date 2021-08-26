@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   entry: './src/main.ts',
   output: {
@@ -20,9 +22,9 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: [
-      'public'
-    ]
+    static: {
+      directory: path.join(__dirname, 'public')
+    }
   },
   mode: 'development'
 };
